@@ -16,7 +16,7 @@ def compile_extension():
         functions=["mean_filter"],
         with_cuda=True,
         extra_cuda_cflags=["-O2"],
-        # build_directory='./cuda_build',
+        build_directory='./cuda_build',
     )
     return rgb_to_grayscale_extension
 
